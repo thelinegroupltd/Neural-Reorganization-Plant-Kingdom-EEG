@@ -1,0 +1,15 @@
+POW FFT Envelope Domain
+
+This component computes the power spectral density (PSD) of band-power envelopes rather than the raw EEG signal. Welch PSD estimation is applied to the time series of band-limited power (theta, alpha, beta, gamma), allowing quantification of how power within each band fluctuates over time. The analysis therefore operates in the modulation-frequency domain, not the carrier-frequency domain.
+
+The script generates absolute envelope PSDs for baseline, indoor, and outdoor conditions. It also computes log-scaled (dB) differences relative to an eyes-closed baseline and between experimental environments. Spectra are summarised as the median across channels with inter-quartile ranges (25–75%) to represent spatial dispersion while reducing sensitivity to individual electrode outliers.
+
+This module characterises temporal organisation of band-power dynamics rather than instantaneous oscillatory frequency content.
+
+Raw EEG Domain
+
+This component computes the power spectral density (PSD) of the raw EEG signal using Welch’s method in the conventional carrier-frequency domain. It quantifies how signal energy is distributed across frequencies from delta through gamma during baseline, indoor, and outdoor conditions.
+
+The script produces both absolute PSD profiles and log-scaled (dB) comparisons relative to an eyes-closed baseline and between environments. As with the envelope domain, spectra are summarised using the median across channels with inter-quartile ranges to provide a robust global representation while retaining spatial variability information.
+
+Unlike the envelope-domain analysis, this module reflects the oscillatory content of the EEG signal itself rather than the temporal modulation of band power.
