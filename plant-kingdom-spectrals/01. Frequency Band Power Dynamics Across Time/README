@@ -1,5 +1,3 @@
-01. Frequency Band Power Dynamics Across Time
-
 This script computes time-resolved band-limited EEG power (Theta, Alpha, BetaL, BetaH, Gamma) across channels relative to a resting baseline. It operates on Emotiv POW.* band-power streams (8 Hz cadence) and expresses activity as z-scored deviations from baseline to enable direct condition comparison.
 
 Outputs include:
