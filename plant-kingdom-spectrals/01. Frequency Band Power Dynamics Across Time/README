@@ -1,0 +1,21 @@
+01. Frequency Band Power Dynamics Across Time
+
+This script computes time-resolved band-limited EEG power (Theta, Alpha, BetaL, BetaH, Gamma) across channels relative to a resting baseline. It operates on Emotiv POW.* band-power streams (8 Hz cadence) and expresses activity as z-scored deviations from baseline to enable direct condition comparison.
+
+Outputs include:
+
+Time × channel heatmaps for each frequency band
+
+Condition difference maps (Outdoor − Indoor)
+
+Baseline-normalised power trajectories across the full session
+
+Unlike summary-based analyses, this script preserves full temporal structure rather than collapsing signals into averages. This enables inspection of:
+
+Persistence and stability of band-power deviations
+
+Spatial distribution across channels
+
+Temporal variability within and between conditions
+
+In effect, this module provides a time-resolved, spatially explicit representation of large-scale spectral activity across canonical EEG frequency bands.
