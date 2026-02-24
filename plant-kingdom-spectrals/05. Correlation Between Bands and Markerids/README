@@ -1,0 +1,5 @@
+This script computes the pairwise correlation structure of band-power envelopes across EEG channels within defined event windows. For each frequency band (Theta, Alpha, BetaL, BetaH, Gamma), it calculates Pearson correlation coefficients between the time-varying band-power signals of all channel pairs, producing a channel × channel correlation matrix per band and per condition.
+
+The analysis operates strictly in the power-envelope domain (8 Hz band-power cadence), not on raw EEG signals or phase data. It therefore quantifies co-modulation — whether band-limited power increases and decreases synchronously across channels over time — rather than signal amplitude, phase locking, or causality.
+
+Correlation matrices are generated for baseline and experimental sessions using identical event-aligned time windows. This allows direct comparison of spatial coordination structure across conditions while preserving consistent temporal framing. The outputs characterize how strongly band-power dynamics are organized globally, regionally, or locally across the scalp within each frequency band.
