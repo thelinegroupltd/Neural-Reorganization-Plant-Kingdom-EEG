@@ -1,4 +1,7 @@
 This script quantifies signal variability and structural diversity in EEG band-power time series using two complementary measures: Shannon entropy and Lempel–Ziv complexity. These metrics are computed across multiple levels of granularity, including band-aggregated representations and full channel × band (POW feature) representations, allowing entropy and complexity to be examined both in summarised and high-resolution forms.
+
 Shannon entropy captures the degree of variability or dispersion in band-limited power signals over time, providing a measure of how evenly power values are distributed within each signal. Lempel–Ziv complexity captures sequence diversity, reflecting how frequently new patterns occur in the temporal structure of the same signals. Although both metrics relate to signal irregularity, they are computed differently and are treated as non-redundant descriptors throughout the script.
+
 The script applies these measures consistently across baseline eyes-open, baseline eyes-closed, indoor session, and outdoor session conditions. Comparisons are performed both at the level of individual frequency bands and across the full spatial–spectral feature space, preserving channel-specific structure where required.
+
 Overall, the script measures how variability and complexity are distributed across frequency bands, channels, and conditions, without imposing assumptions about physiological meaning or cognitive state.
