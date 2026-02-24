@@ -1,0 +1,11 @@
+This script measures the time-resolved relative composition of EEG spectral power by computing ratios between band-limited power envelopes rather than analysing absolute band power. Using Theta, Alpha, BetaL, BetaH, and Gamma envelopes, it derives both single-band ratios and inter-band ratios (e.g., Alpha/Theta, Beta/Alpha, Gamma/Beta) to characterise how spectral energy is distributed across frequencies at each moment in time.
+
+Ratios are computed across all channels and summarised using the median to reduce sensitivity to outlier electrodes and localised artefacts. Two aggregation strategies are implemented:
+
+Median of ratios, where ratios are calculated at the channel level and then aggregated.
+
+Ratio of medians, where band medians are computed first and ratios are formed afterward.
+
+This dual approach allows inspection of whether observed patterns depend on aggregation order.
+
+In addition to absolute ratio time series, the script computes baseline-anchored difference (Δ) ratios, expressing session values relative to the median ratio observed during an eyes-closed baseline. These Δ plots quantify how far and in what direction the session’s spectral composition departs from baseline, independent of absolute power scale.
