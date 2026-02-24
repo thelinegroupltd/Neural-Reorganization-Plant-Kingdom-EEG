@@ -1,0 +1,11 @@
+This script quantifies functional coordination between EEG channels by computing pairwise coherence matrices. It operates at two levels:
+
+Raw EEG phase coherence – measuring frequency-specific phase synchronization between channels.
+
+Band-power envelope coherence – measuring coherence between slow amplitude envelopes of band-limited signals.
+
+The analysis is performed independently for canonical frequency bands (theta, alpha, beta, gamma), allowing direct comparison of spatial synchronization structure across frequencies. Unlike power-based analyses, this script isolates temporal alignment and shared dynamics, rather than signal magnitude.
+
+At the raw EEG level, the output matrices describe how consistently channels maintain phase relationships within each frequency band. These results characterize spatial organization of synchronization under different conditions without conflating coherence with power amplitude.
+
+At the band-power envelope level, the script evaluates coordination of slow amplitude fluctuations across multiple modulation timescales (e.g., ultraslow, slow, medium, fast). This allows functional connectivity to be examined not only by carrier frequency, but also by the temporal scale of modulation. The result is a multi-layered view of connectivity structure, distinguishing fast phase locking from slower, large-scale amplitude coordination.
