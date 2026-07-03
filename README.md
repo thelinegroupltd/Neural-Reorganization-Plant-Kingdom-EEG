@@ -1,6 +1,6 @@
 # Neural-Reorganization-Plant-Kingdom-EEG
 
-This repository contains the full analysis of EEG data from the Plant Kingdom sessions for the paper "Neural Reorganisation During Monroe Institute Hemi-Sync Inner Earth ‘Plant Kingdom’ Sessions A Multiscale EEG Analysis". The analysis focuses on neural reorganization during Monroe Institute Hemi-Sync Inner Earth sessions and includes multiscale analyses of spectral dynamics, entropy, cross-frequency coupling, and state-space flux in the context of environmental influence on brain activity.
+This repository contains the full analysis of EEG data from the Plant Kingdom sessions for the paper "Neural Reorganisation During Monroe Institute Hemi-Sync Inner Earth ‘Plant Kingdom’ Sessions A Multiscale EEG Analysis". The analysis focuses on neural reorganization during Monroe Institute Hemi-Sync Inner Earth sessions and includes multiscale analyses of spectral dynamics, entropy, cross-frequency coupling, and state-space flux in the context of environmental influence on brain activity. EEG signals were recorded with the Emotiv Flex 2.0, a 32-channel research-grade wireless EEG system configured according to the international 10–20 electrode layout. The sampling rate for raw EEG data was 256 Hz, and band-power (FFT) metrics were calculated at an 8 Hz cadence.
 
 Full Paper here: https://thelinegroup.ltd/articles/Monroe-Institute-Inner-Earth/Neural-Reorganization-Plant-Kingdom-EEG/neural-reorganization-plant-kingdom-eeg-study
 
